@@ -1,0 +1,211 @@
+/* Created by Emms */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    @keyframes anim{
+    
+        100%{
+            top: 0px;
+        }
+    }
+    
+    
+    /*CSS begins*/
+    
+    
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: green;
+    }
+    
+    :root{
+    --skinColor: rgba(239, 101, 9, 1);
+    }
+    
+    
+    
+    #all-holder{
+        width: 320px;
+        height: 255px;
+        background: #ffff;
+        position: absolute;
+        z-index: 0;
+        top: 49px;
+        filter: drop-shadow(0px 0px 4px #000);
+        left:50%;
+        transform:translate(-53%, 20px);
+    }
+    
+    .head{
+        width: 140px;
+        height: 98px;
+        background: var(--skinColor);
+        border-radius: 84px/75px 72% 54% 55%;
+        left: 158px;
+        position: relative;
+        transform: translate(-50%, 15px) rotate(-9deg);
+        border: 2px solid;
+    }
+    
+    .jaw{    
+        width: 161px;
+        height: 82px;
+        background: var(--skinColor);
+        position: relative;
+        left: 174px;
+        transform: translate(-50%) scaleX(-1) rotate(9deg);
+        bottom: 43px;
+        border-radius: 400px 80px 700px 400px;
+        border: 2px solid;
+        overflow: hidden;
+    }
+    
+    .faceLine-cutter{    
+        width: 134px;
+        height: 11px;
+        background: var(--skinColor);
+        position: relative;
+        top: -125px;
+        border-radius: 15px 7px 2px 4px;
+        left: 91px;
+        z-index: 5;
+        transform: scaleX(-1)  rotate(9deg);
+    }
+    
+    .eye{
+        width: 45px;
+        height: 45px;
+        background: #fff;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        top: 41px;
+        left: 117px;
+        transform: rotate(7deg);
+        z-index: 5;
+    }
+    
+    .left-eye{
+        left: 167px;
+        top: 29px;
+        transform: scale(-1) rotate(-32deg);
+    }
+    .eye:before{
+        content: '';
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin: 6px 0 0 7px;
+        background: #000;
+        border-radius: 65%;
+    }
+    
+    
+    .eyebrow{
+        width: 30px;
+        height: 12px;
+        background: #000;
+        border-radius: 50px;
+        position: absolute;
+        transform: translate(28px, 49px) scale(0.55) rotate(-21deg);
+        z-index: 2;
+        left: 86px;
+        top: -19px;
+    }
+    .eyebrow:before{
+        content: '';
+        width: 29px;
+        height: 17px;
+        background: #ef6509;
+        margin: 9px 0 0 0px;
+        position: absolute;
+        border-radius: 335px 335px 48px 10px;
+    }
+    .left-eyebrow{
+        left: 162px;
+        transform: translate(10px, 49px) scale(0.55) rotate(-1deg);
+        top: -30px;
+    }
+    
+    .eye-lash{
+        width: 9px;
+        height: 3px;
+        border-radius: 20px;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: -9px;
+        top: 14px;
+        transform: rotate(12deg);
+    }
+    .eye-lash:before{
+        content: '';
+        width: 8px;
+        height: 3px;
+        border-radius: 20px;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        transform: rotate(-13deg);
+    }
+    
+    .mouth{
+        width: 74px;
+        height: 45px;
+        background: #e51e14;
+        position: absolute;
+        border: 2px solid;
+        top: 82px;
+        left: 142px;
+        z-index: 4;
+        border-radius: 20px 20px 75px 75px;
+        overflow: hidden;
+        transform: rotate(-10deg);
+    }
+    .teeth{
+        width: 20px;
+        height: 21px;
+        border: 2px solid;
+        background: #fff;
+        border-radius: 50px;
+        position: absolute;
+        top: -8px;
+        left: 17px;
+        z-index: 1;
+    }
+    .r-tooth{
+        left: 29px;
+        z-index: 0;
+    }
+    .mouth:before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 10px;
+        background: #fff;
+        left: 25px;
+        top: -5px;
+        z-index: 2;
+    
+    }
+    .mouth:after{
+        content: '';
+        width: 41px;
+        height: 23px;
+        border-radius: 45px 45px 27px 27px;
+        position: absolute;
+        background: #ec304b;
+        border: 2px solid;
+        right: 30px;
+        bottom: -4px;
+        transform: rotate(22deg);
+    }
